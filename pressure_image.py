@@ -1,4 +1,5 @@
 """Pressure injury image class
+sectionauthor:: Artur Martí Gelonch <artur.marti@students.salle.url.edu>
 
 Class to manage the pressure injurie's images.
 Its stucture allows to process the user's selected images and masks.

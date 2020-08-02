@@ -1,4 +1,5 @@
 """Main code and packages manager
+sectionauthor:: Artur Martí Gelonch <artur.marti@students.salle.url.edu>
 
 Tool that allows the connection between the View and Model.
 Handles all the incoming requests.

@@ -1,4 +1,5 @@
 """File and directory manager
+sectionauthor:: Artur Martí Gelonch <artur.marti@students.salle.url.edu>
 
 Tool that allows to check, read and write files to specified directories
 that contain image files and metadata files. The files must be "txt" and "jpg".

@@ -1,4 +1,5 @@
 """Main data manager
+sectionauthor:: Artur Martí Gelonch <artur.marti@students.salle.url.edu>
 
 It is the application's dynamic data structure,
 independent of the user interface. It directly manages the data.

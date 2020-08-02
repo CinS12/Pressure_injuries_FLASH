@@ -1,4 +1,5 @@
 """Data representation and user interaction
+sectionauthor:: Artur Martí Gelonch <artur.marti@students.salle.url.edu>
 
 View represents the visualization of the data.
 """
