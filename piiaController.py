@@ -41,7 +41,8 @@ class Controller:
         Prints that button_3 from view has been pressed.
         Calls the functions to check metadata and images before saving.
     load_image()
-        Calls the function to load an image from Pressure_img.
+        Calls the function to load a pressure injury's image.
+        WARNING: For optimal visualization, images must be '560x390'
     image_loaded(image_tk)
         Defines a Pressure_img object and saves its image.
         Calls the update_image from View to update the label with the loaded image.
@@ -206,7 +207,8 @@ class Controller:
 
     def load_image(self):
         """
-        Calls the function to load an image from Pressure_img.
+        Calls the function to load a pressure injury's image.
+        WARNING: For optimal visualization, images must be '560x390'
         """
 
         print("controller - carregar imatge")

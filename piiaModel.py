@@ -61,6 +61,7 @@ class Model:
         """
         File dialog to ask user for an image.
         Sends a request to the Controller with the PIL image read.
+        WARNING: For optimal visualization, images must be '560x390'
         """
 
         path = 0
