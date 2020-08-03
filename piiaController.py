@@ -556,6 +556,7 @@ class Controller:
         print("controller - flash_confirmated!")
         self.pressure_img.flash_reduced = True
         self.pressure_img.mask = img_cv2_flash
+        self.pressure_img.img = img_cv2_flash.copy()
         self.view.update_flash_label(img_cv2_flash)
 
     def image_accepted(self):

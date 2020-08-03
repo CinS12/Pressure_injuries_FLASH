@@ -21,9 +21,9 @@ class Pressure_img:
     img_origin : image cv2
         original uploaded image.
     img : image cv2
-        mask of the original uploaded image.
+        sub region of the original uploaded image.
     mask : image cv2
-        mask of the original uploaded image.
+        processed mask of the original uploaded image.
     perimetre_done : bool
         boolean to check if perimeter has been cropped.
     perimetre : image cv2
@@ -298,8 +298,11 @@ class Pressure_img:
                 list of all selected coordinates as Points.
             """
 
+            """
             if self.flash_reduced ==True:
                 img = self.flash_reduction(img)
+                self.img = img
+            """
             # blank mask:
             mask = np.zeros_like(img)
             a3 = np.array([vertices], dtype=np.int32)

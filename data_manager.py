@@ -202,6 +202,7 @@ class Data_manager:
         else:
             print("Successfully created the directory %s " % PATH_IMG_DIR + "/Img_" + str(self.id))
             cv2.imwrite(PATH_IMG_DIR + "/Img_" + str(self.id) + "/img_origin_" + str(self.id) + ".jpg", img.img_origin)
+            cv2.imwrite(PATH_IMG_DIR + "/Img_" + str(self.id) + "/mask_" + str(self.id) + ".jpg", img.mask)
             cv2.imwrite(PATH_IMG_DIR + "/Img_" + str(self.id) + "/img_" + str(self.id) + ".jpg", img.img)
             if img.perimetre_done:
                 cv2.imwrite(PATH_IMG_DIR + "/Img_" + str(self.id) + "/perimetre_" + str(self.id) + ".jpg",
@@ -227,7 +228,7 @@ class Data_manager:
            id of the image that has to be read
         """
 
-        im = ImageTk.PhotoImage(Image.open(PATH_IMG_i + str(i) + "/img_" + str(i) + ".jpg"))
+        im = ImageTk.PhotoImage(Image.open(PATH_IMG_i + str(i) + "/mask_" + str(i) + ".jpg"))
         pub.sendMessage("IMAGE_LOAD_i", img_tk=im)
 
 
